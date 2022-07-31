@@ -43,7 +43,7 @@ function stepped()
 end
 
 function keyPressed(key, gpe)
-    if not gpe and key.KeyCode == Enum.KeyCode.Y then
+    if not gpe and key.KeyCode == Enum.KeyCode.Y and _G.Autogaurd then
         updateNearestPlayerWithBall()
         if not tracking then
             tracking = true
