@@ -1,6 +1,6 @@
 ## just a bunch of unreleased silent aim things i made
 
-silent aim V1: 
+silent aim v1: 
 ```
 local Script = game:HttpGet("https://raw.githubusercontent.com/6ce/Hoopz-Silent-Aims/main/FireServer.lua", true)
 
