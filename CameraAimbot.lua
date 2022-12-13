@@ -3,7 +3,6 @@
 local Player = game:GetService("Players").LocalPlayer
 local Camera = workspace.CurrentCamera
 
-local Controls = require(Player.PlayerScripts.ControlScript.MasterControl)
 local Button = Player.PlayerGui.PowerUI.CursorButton
 
 if workspace:FindFirstChild("PracticeArea") then
@@ -34,7 +33,7 @@ game:GetService("UserInputService").InputBegan:Connect(function(Key, GPE)
         
         Player.DevEnableMouseLock = false
         Camera.CFrame = CFrame.new(Player.Character.Head.Position, Goal.Position)
-        firesignal(Button.MouseButton1Down)
+        firesignal(Button.MouseButton1Click)
         Camera.CFrame = OldCFrame
         Player.DevEnableMouseLock = true
     end
