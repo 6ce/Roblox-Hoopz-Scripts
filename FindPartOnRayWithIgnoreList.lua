@@ -21,15 +21,17 @@ local GetGoal = function()
     return Goal
 end
 
-local Hook; Hook = hookmetamethod(game, "__namecall", newcclosure(function(Self, ...)
-    local Arguments = {...}
-    local NCM = getnamecallmethod()
-    
-    if Self == workspace and NCM == "FindPartOnRayWithIgnoreList" and not game:IsAncestorOf(getcallingscript()) then
-        local Goal = GetGoal()
+local Hook do
+    Hook = hookmetamethod(game, "__namecall", newcclosure(function(Self, ...)
+        local Arguments = {...}
+        local NCM = getnamecallmethod()
         
-        return Goal, Goal.Position + Vector3.new(0, 45, 0)
-    end
+        if Self == workspace and NCM == "FindPartOnRayWithIgnoreList" and not game:IsAncestorOf(getcallingscript()) then
+            local Goal = GetGoal()
+        
+            return Goal, Goal.Position + Vector3.new(0, 45, 0)
+        end
     
-    return Hook(Self, ...)
-end))
+        return Hook(Self, ...)
+    end))
+end
