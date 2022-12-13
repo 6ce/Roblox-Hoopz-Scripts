@@ -34,6 +34,7 @@ game:GetService("UserInputService").InputBegan:Connect(function(Key, GPE)
         
         Player.DevEnableMouseLock = false
         Camera.CFrame = CFrame.new(Player.Character.Head.Position, Goal.Position)
+        firesignal(Button.MouseButton1Down)
         Camera.CFrame = OldCFrame
         Player.DevEnableMouseLock = true
     end
