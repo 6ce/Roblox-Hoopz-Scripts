@@ -12,7 +12,7 @@ local Script = game:HttpGet("https://raw.githubusercontent.com/6ce/Hoopz-Silent-
 
 loadstring(Script)()
 ```
-camera aimbot: (x to shoot)
+silent aim v3: (x to shoot)
 ```
 local Script = game:HttpGet("https://raw.githubusercontent.com/6ce/Hoopz-Silent-Aims/main/CameraAimbot.lua", true)
 
