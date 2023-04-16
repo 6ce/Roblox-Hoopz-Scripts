@@ -1,12 +1,12 @@
 ## just a bunch of unreleased silent aim things i made
 
-silent aim v1: 
+silent aim v1: (click to shoot)
 ```
 local Script = game:HttpGet("https://raw.githubusercontent.com/6ce/Hoopz-Silent-Aims/main/FireServer.lua", true)
 
 loadstring(Script)()
 ```
-silent aim v2: 
+silent aim v2: (click to shoot)
 ```
 local Script = game:HttpGet("https://raw.githubusercontent.com/6ce/Hoopz-Silent-Aims/main/FindPartOnRayWithIgnoreList.lua", true)
 
